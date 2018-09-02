@@ -1,0 +1,20 @@
+{
+  "name": "query-serverless-rds-lambda",
+  "version": "1.0.0",
+  "description": "Lambda function that makes queries to a Auora Serverless RDS to test it",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aurora-serverless",
+    "lambda",
+    "benchmark"
+  ],
+  "author": "Geronimo Di Pierro",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.16.0",
+    "promise-mysql": "^3.3.1"
+  }
+}
