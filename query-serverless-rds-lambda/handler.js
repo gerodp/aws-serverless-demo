@@ -24,7 +24,7 @@ async function initDB(connection){
     }
 }
 
-module.exports.queryRDS = async (event, context, callback) => {
+module.exports.queryRDS = async () => {
     let connection;
 
     try {
@@ -36,7 +36,7 @@ module.exports.queryRDS = async (event, context, callback) => {
         });
     } catch(e) {
         console.error('Connection error = ' + e.toString());
-        callback(e, {});
+        throw e;
     }
 
     await initDB(connection);
